@@ -1,0 +1,38 @@
+* {
+    font-family: 'Commissioner', sans-serif;
+}
+
+body {
+    /* text-align: center; */
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 80vh;
+}
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+.astrological-forecast {
+    /* position: fixed;
+    bottom: 20px;
+    width: 700px;
+    font-size: 25px;
+    font-weight: bold;
+    left: 50%;
+    transform: translateX(-50%); */
+    width: 700px;
+    font-size: 25px;
+    font-weight: bold;
+    /* justify-self: flex-end; */
+}
+
+.rand-forecast {
+    font-size: 20px;
+}

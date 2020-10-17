@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>placekeeper</title>
+    <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body onload="renderUserStyle(); getAstrologicalForecast();">
+    <header>
+        <h1>Welcome to Place-Keeper</h1>
+    </header>
+    <main>
+        <nav>
+            <h3>Navigation Bar</h3>
+            <a class="button" href='user-prefs.html'>Preferences</a>
+            <a class="button" href='map.html'>Map</a>
+        </nav>
+        <section class="astrological-forecast">Astrological-forecast:
+            <div class="rand-forecast"></div>
+        </section>
+    </main>
+
+    <script src="js/storage-service.js"></script>
+    <script src="js/utilService.js"></script>
+    <script src="js/userPrefService.js"></script>
+    <script src="js/userPrefs-controller.js"></script>
+    <script src="js/placeService.js"></script>
+
+</body>
+
+</html>

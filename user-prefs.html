@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>placekeeper</title>
+    <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/userPrefs.css">
+</head>
+
+<body onload="onInit()">
+    <header>
+        <h1>Welcome to Place-Keeper</h1>
+    </header>
+    <main>
+        <nav>
+            <h3>Navigation Bar</h3>
+            <a class="button" href='index.html'>Home</a>
+            <a class="button" href='map.html'>Map</a>
+        </nav>
+        <section class="user-preferences">
+            <form>
+                <table>
+                    <tr>
+                        <td>
+                            <label for="bgc">Choose background color: </label>
+                            <input type="color" id="bgc" name="body" value="#f6b73c">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="text-color">Choose text color: </label>
+                            <input type="color" id="text-color" name="text-color" value="#f6b73c">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="date-birth">Date of Birth:</label></td>
+                        <td><input type="date" id="date-birth" name="date-birth" /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="the-email">E-mail:</label></td>
+                        <td><input type="email" name="email" id="the-email" /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="age">Age:</label></td>
+                        <td>
+                            <input type="range" id="age" name="age" min="18" max="120" value="26" onchange="showAge(this.value)" />
+                            <span class="age-display">26</span>
+                        </td>
+                    </tr>
+                </table>
+                <button class="submit-btn" onclick="onSetPrefs(event)" type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="js/storage-service.js"></script>
+    <script src="js/utilService.js"></script>
+    <script src="js/userPrefService.js"></script>
+    <script src="js/userPrefs-controller.js"></script>
+    <script src="js/placeService.js"></script>
+
+</body>
+
+</html>

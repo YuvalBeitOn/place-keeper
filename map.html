@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>placekeeper</title>
+    <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/map.css">
+</head>
+
+<header>
+    <h1>Welcome to Place-Keeper</h1>
+    <nav>
+        <a class="button" href='index.html'>Home</a>
+        <a class="button" href='user-prefs.html'>Preferences</a>
+    </nav>
+</header>
+
+<body onload="initMap()">
+    <main>
+        <section class="map-container">
+            <div id="map" style="width:600px; height:500px;"></div>
+            <h2>Current Position:</h2>
+
+            <button class="curr-location-btn" onclick="getPosition()"><i class="fas fa-map-marked-alt"></i></button>
+
+            <section class="places">My Places
+                <ul class="places-list"></ul>
+            </section>
+        </section>
+
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmhCBEHJkdIG3m11Ua7ZsKbz3u9nMJBuI&callback=initMap" type="text/javascript"></script>
+
+        <script src="js/storage-service.js"></script>
+        <script src="js/map-service.js"></script>
+        <script src="js/map-controller.js"></script>
+        <script src="js/utilService.js"></script>
+        <script src="js/userPrefService.js"></script>
+        <script src="js/userPrefs-controller.js"></script>
+    </main>
+</body>
+
+</html>
