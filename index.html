@@ -6,19 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>placekeeper</title>
     <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
     <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body onload="renderUserStyle(); getAstrologicalForecast();">
     <header>
-        <h1>Welcome to Place-Keeper</h1>
+        <nav>
+            <a class="brand" href="index.html">Place-Keeper</a>
+            <a href="user-prefs.html">Preferences</a>
+            <a href="map.html">Map  <i class="fas fa-map-pin"></i></a>
+        </nav>
     </header>
     <main>
-        <nav>
-            <h3>Navigation Bar</h3>
-            <a class="button" href='user-prefs.html'>Preferences</a>
-            <a class="button" href='map.html'>Map</a>
-        </nav>
+        <i class="fas fa-globe-americas globe"></i>
         <section class="astrological-forecast">Astrological-forecast:
             <div class="rand-forecast"></div>
         </section>

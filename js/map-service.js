@@ -30,7 +30,7 @@ function addPlace(location, placeName) {
 function addMarker(location, map) {
     const mark = new google.maps.Marker({
         position: location,
-        map: map
+        map: map,
     });
 }
 

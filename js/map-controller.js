@@ -13,7 +13,7 @@ function initMap(lat = EILATLAT, lng = EILATLNG) {
             lat,
             lng
         },
-        zoom: 16
+        zoom: 14
     };
     var map = new google.maps.Map(
         elMap,
@@ -93,12 +93,17 @@ function renderPlaces() {
     var strHtmls = '';
     places.forEach(place => {
         console.log(place.lat, place.lng);
-        strHtmls += `<li><button onclick="onDeletePlace(${place.id})">X</button> ${place.name}</li>`
+        strHtmls += `<li> 
+                    <span onclick="goToPlace('${place.lat}', '${place.lng}')">${place.name}</span>
+                    <button class="delete-btn" onclick="onDeletePlace('${place.id}')">X</button>
+                    </li>`
     });
     document.querySelector('.places-list').innerHTML = strHtmls;
 }
 
-// onclick="goToPlace(${place.lat, place.lng})"
+function goToPlace(lat, lng) {
+    initMap(+lat, +lng);
+}
 
 function renderMarkers() {}
 

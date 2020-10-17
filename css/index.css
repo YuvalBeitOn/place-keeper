@@ -3,36 +3,121 @@
 }
 
 body {
-    /* text-align: center; */
-}
-
-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    height: 80vh;
+    height: 100vh;
 }
 
 h1 {
-    font-size: 50px;
+    font-size: 4.375rem;
+}
+
+a {
+    text-decoration: none;
+    color: hotpink;
+    font-weight: bold;
+    margin: 1rem;
+}
+
+button,
+li {
+    cursor: pointer;
+}
+
+.curr-location-btn {
+    font-size: 2rem;
+    outline: none;
+    background-color: transparent;
+    border-color: transparent;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.curr-location-btn:hover {
+    transform: scale(1.2);
+    margin-bottom: 1.5rem;
+}
+
+.places {
+    text-align: center;
+    font-size: 2rem;
+    margin-left: 2rem;
+}
+
+li {
+    list-style-type: none;
+    font-size: 1.2rem;
+}
+
+nav {
+    margin-bottom: 10rem;
+    font-size: 1.5rem;
     text-align: center;
 }
 
-.astrological-forecast {
-    /* position: fixed;
-    bottom: 20px;
-    width: 700px;
-    font-size: 25px;
-    font-weight: bold;
-    left: 50%;
-    transform: translateX(-50%); */
-    width: 700px;
-    font-size: 25px;
-    font-weight: bold;
-    /* justify-self: flex-end; */
+.map-container {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-.rand-forecast {
-    font-size: 20px;
+.position-container {
+    text-align: center;
+    margin-right: 2rem;
+}
+
+.delete-btn {
+    outline: none;
+    background-color: transparent;
+    font-size: 1.5rem;
+    border-color: transparent;
+}
+
+h3 {
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+
+.astrological-forecast {
+    font-size: 1.2rem;
+    text-align: center;
+    position: fixed;
+    left: 50%;
+    bottom: 1rem;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.5rem;
+    line-height: 3rem;
+    font-weight: 500;
+}
+
+.submit-btn {
+    border: transparent;
+    outline: none;
+    background-color: whitesmoke;
+    font-size: 1.5rem;
+    margin: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 0.1 rem;
+}
+
+.submit-btn:hover {
+    transform: scale(1.1);
+}
+
+.globe {
+    position: absolute;
+    font-size: 15rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 10rem;
+    color: rgb(73, 69, 71);
 }

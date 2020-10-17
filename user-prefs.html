@@ -6,19 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>placekeeper</title>
     <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/userPrefs.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body onload="onInit()">
     <header>
-        <h1>Welcome to Place-Keeper</h1>
+        <nav>
+            <a class="brand" href="index.html">Place-Keeper</a>
+            <a href="user-prefs.html">Preferences</a>
+            <a href="map.html">Map  <i class="fas fa-map-pin"></i></a>
+        </nav>
     </header>
     <main>
-        <nav>
-            <h3>Navigation Bar</h3>
-            <a class="button" href='index.html'>Home</a>
-            <a class="button" href='map.html'>Map</a>
-        </nav>
         <section class="user-preferences">
             <form>
                 <table>
@@ -35,16 +36,15 @@
                         </td>
                     </tr>
                     <tr>
-                        <td><label for="date-birth">Date of Birth:</label></td>
-                        <td><input type="date" id="date-birth" name="date-birth" /></td>
+                        <td><label for="date-birth">Date of Birth: </label><input type="date" id="date-birth" name="date-birth" /></td>
                     </tr>
                     <tr>
-                        <td><label for="the-email">E-mail:</label></td>
-                        <td><input type="email" name="email" id="the-email" /></td>
+                        <td><label for="the-email">E-mail: </label>
+                            <input type="email" name="email" id="the-email" /></td>
                     </tr>
                     <tr>
-                        <td><label for="age">Age:</label></td>
-                        <td>
+                        <td><label for="age">Age: </label>
+
                             <input type="range" id="age" name="age" min="18" max="120" value="26" onchange="showAge(this.value)" />
                             <span class="age-display">26</span>
                         </td>
